@@ -16,5 +16,9 @@ jobs:
       run: |
         sudo gem install bundler
         sudo gem install ffi
-        bundle install
+        sudo gem install capybara
+        sudo gem install rspec
+        sudo gem install selenium-webdriver
+        sudo gem install cucumber
+        sudo gem chromedriver-helper
         cucumber
