@@ -20,5 +20,5 @@ jobs:
         sudo gem install rspec
         sudo gem install selenium-webdriver
         sudo gem install cucumber
-        sudo gem chromedriver-helper
+        sudo gem install chromedriver-helper
         cucumber
