@@ -16,5 +16,5 @@ jobs:
       run: |
         sudo gem install bundler
         sudo gem install ffi
-        sudo bundle install
-        sudo cucumber
+        bundle install
+        cucumber
