@@ -3,17 +3,20 @@ Dado("que eu estou na pagina inicial do site") do
   end
   
 Quando("eu preencher os dados de entrega do meu pedido") do
-  find('#delivery-form > div:nth-child(1) > input').send_keys('78715266')
-  find('#delivery-form > div:nth-child(2) > input').send_keys('Rua F')
-  find('#delivery-form > div:nth-child(3) > input').send_keys('30')
-  find('#delivery-form > div:nth-child(4) > input').send_keys('AP 45')
-  find('#delivery-form > div:nth-child(5) > input').send_keys('5199999999')
+  find('#delivery-form > div:nth-child(1) > input').send_keys('Jose Silva')
+  find('#delivery-form > div:nth-child(2) > input').send_keys('jose.silva@teste.com')
+  find('#delivery-form > div:nth-child(3) > input').send_keys('000000000000')
+  find('#delivery-form > div:nth-child(4) > input').send_keys('99999999')
+  find('#delivery-form > div:nth-child(5) > input').send_keys('Rua Marilene')
+  find('#delivery-form > div:nth-child(6) > input').send_keys('30')
+  find('#delivery-form > div:nth-child(7) > input').send_keys('AP 21')
+  find('#delivery-form > div:nth-child(8) > input').send_keys('5199999999')
   find('#app > footer > div > button').click
 end
   
-Quando("selecionar o pedido personalizado") do
-  find('#app > div > main > div:nth-child(1) > div.card__featured > img').click
-end
+#Quando("selecionar o pedido personalizado") do
+#  find('#app > div > main > div:nth-child(1) > div.card__featured > img').click
+#end
   
 Quando("escolher a Pizza familia") do
   find('#app > div > main > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div').click

@@ -5,7 +5,7 @@ Funcionalidade: Fazer um pedido personalizado
 Contexto:
 Dado que eu estou na pagina inicial do site
 Quando eu preencher os dados de entrega do meu pedido
-E selecionar o pedido personalizado
+#E selecionar o pedido personalizado
 E escolher a Pizza familia
 E escolher 4 sabores
 E escolher 4 sabores Alho e Óleo
