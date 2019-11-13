@@ -14,7 +14,7 @@ jobs:
         sudo apt-get install ruby-full
     - name: Build Project
       run: |
-        gem install bundler
-        gem install ffi
-        bundle install
-        cucumber
+        sudo gem install bundler
+        sudo gem install ffi
+        sudo bundle install
+        sudo cucumber
