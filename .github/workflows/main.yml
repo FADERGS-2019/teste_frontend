@@ -10,10 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build Project
-      run: gem install bundler
-      run: gem install ffi
-      run: bundle install
-      run: cucumber
+      run: gem install bundler && gem install ffi && bundle install && cucumber
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
