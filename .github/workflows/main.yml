@@ -9,9 +9,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build Project
-      run: gem install bundler && gem install ffi && bundle install && cucumber
-    - name: Run a multi-line script
+    - name: Install Ruby
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        apt-get install ruby-full
+    - name: Build Project
+      run: |
+        gem install bundler
+        gem install ffi
+        bundle install
+        cucumber
