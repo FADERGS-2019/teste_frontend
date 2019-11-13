@@ -8,4 +8,4 @@ Capybara.configure do |config|
     config.default_max_wait_time = 5
 end
 
-Selenium::WebDriver::Chrome.driver_path = "./chromedriver"
+Selenium::WebDriver::Chrome.driver_path = "./chromedriver.exe"
